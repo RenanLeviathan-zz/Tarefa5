@@ -27,9 +27,10 @@ class Grafo:
           exp.append((v,w))
           self.queue.append(w)
           self.marc.append(w)
+          print("Aresta de busca:",(v,w))
         else:
-          print("aresta de retorno:",(v,w))
           if ((v,w) not in exp) and ((w,v) not in exp):
+            print("aresta de retorno:",(v,w))
             exp.append((v,w))
     return exp
                 
