@@ -44,4 +44,5 @@ grafo={
 inicial=input("Vértice inicial:")
 g=Grafo(grafo,inicial)
 exp=g.busca_largura()
+print("Arestas de busca:\n")
 print([i for i in exp])
